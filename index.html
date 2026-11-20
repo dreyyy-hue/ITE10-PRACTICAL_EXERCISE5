@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple collection of homemade recipes.">
+  <title>Home | Drey's Recipe Book</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Drey's Recipe Book</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">HOMEMADE • SIMPLE • DELICIOUS</p>
+      <h1>Good food starts here.</h1>
+      <p>Welcome to my recipe book! Explore easy meals with clear ingredients and step-by-step instructions.</p>
+      <a class="button" href="#recipes">Explore recipes</a>
+    </section>
+
+    <section id="recipes" class="section">
+      <h2>Featured recipes</h2>
+      <p class="section-intro">Choose a recipe to see its ingredients and cooking steps.</p>
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=900&q=80" alt="A serving of Filipino chicken adobo">
+          <div class="card-content">
+            <h3>Chicken Adobo</h3>
+            <p>A savory Filipino chicken dish simmered in soy sauce, vinegar, garlic, and spices.</p>
+            <a href="recipes/adobo.html">View recipe</a>
+          </div>
+        </article>
+        <article class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80" alt="A bowl of pasta with sauce">
+          <div class="card-content">
+            <h3>Garlic Butter Pasta</h3>
+            <p>A quick pasta dish with garlic, butter, and a little cheese.</p>
+            <a href="recipes/pasta.html">View recipe</a>
+          </div>
+        </article>
+        <article class="recipe-card">
+          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80" alt="A stack of pancakes with fruit">
+          <div class="card-content">
+            <h3>Fluffy Pancakes</h3>
+            <p>Soft, fluffy pancakes for breakfast or a simple snack.</p>
+            <a href="recipes/pancakes.html">View recipe</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section feature">
+      <div>
+        <h2>Cooking video</h2>
+        <p>Here is a sample video element demonstrating how multimedia can be included in an HTML page. Replace it with a recipe video you choose if your teacher expects a cooking demonstration.</p>
+      </div>
+      <video controls preload="metadata" width="640" poster="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section class="section" aria-labelledby="nutrition-heading">
+      <h2 id="nutrition-heading">Sample kitchen measurement guide</h2>
+      <p>Use this simple table as a quick reference while preparing recipes.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Common kitchen measurements</caption>
+          <thead><tr><th scope="col">Measurement</th><th scope="col">Equivalent</th><th scope="col">Example use</th></tr></thead>
+          <tbody>
+            <tr><td>1 teaspoon</td><td>5 mL</td><td>Seasoning</td></tr>
+            <tr><td>1 tablespoon</td><td>15 mL</td><td>Oil or sauce</td></tr>
+            <tr><td>1 cup</td><td>240 mL</td><td>Flour or liquid</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="feedback" class="section feedback">
+      <h2>Share your feedback</h2>
+      <p>Tell me what you think about the recipe collection.</p>
+      <form action="#" method="get">
+        <label for="visitor-name">Your name</label>
+        <input id="visitor-name" name="name" type="text" autocomplete="name" required>
+        <label for="visitor-email">Email address</label>
+        <input id="visitor-email" name="email" type="email" autocomplete="email" required>
+        <label for="favorite-recipe">Favorite recipe</label>
+        <select id="favorite-recipe" name="favorite-recipe">
+          <option value="adobo">Chicken Adobo</option>
+          <option value="pasta">Garlic Butter Pasta</option>
+          <option value="pancakes">Fluffy Pancakes</option>
+        </select>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+        <button class="button" type="submit">Send feedback</button>
+      </form>
+      <p class="small-note">Note: This demonstration form is not connected to an email or database service.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Drey's Recipe Book. Created for ITE 10 Practical Exercise 5.</p>
+  </footer>
+</body>
+</html>
